@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  overflow-x: hidden;
+}
+header {
+  position: sticky;
+  top: 0;
+}
+/* header start */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.nav__logo {
+  color: #2d3982;
+}
+.nav-list {
+  display: flex;
+  margin-right: 100px;
+}
+.nav__item {
+  margin-left: 40px;
+  list-style-type: none;
+}
+.nav__link {
+  text-decoration: none;
+  color: #393939;
+}
+.nav__link:hover {
+  border-bottom: 2px solid #e37889;
+  color: #e37889;
+}
+.nav__link-active {
+  border-bottom: 2px solid #e37889;
+}
+/* Header nav end */
+
+/* section start */
+/*  section */
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  text-align: left;
+}
+.hero-container__info {
+  height: 50vh;
+  max-width: 45vw;
+  min-width: 45vw;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+.hero__heading {
+  color: #101d42;
+  font-size: 70px;
+  font-weight: bold;
+  width: 118%;
+}
+.hero__paragraph {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.hero__btn {
+  border: none;
+  background-color: #5a69d0;
+  color: #fff;
+  padding: 15px 70px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.hero__btn:hover {
+  transform: scale(1.01);
+}
+.hero__btn:focus {
+  outline: none;
+}
+.hero__img {
+  height: 500px;
+  margin-top: 200px;
+  margin-right: 100px;
+}
+/*hero section end  */
+
+/* recommendation section start */
+.recommendation {
+  width: 100vw;
+  height: 50vh;
+  padding: 2%;
+}
+.recommendation-heading {
+  color: #101d42;
+  font-size: 50px;
+  font-weight: bold;
+}
+.recommendation-card {
+  display: flex;
+  height: 70vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.recommendation-card__item {
+  margin: 20px;
+  cursor: pointer;
+}
+.recommendation-card__link {
+  text-decoration: none;
+}
+.recommendation-card__link > span {
+  position: relative;
+  color: #fff;
+  right: -400px;
+  top: -20px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.recommendation-link__img {
+  height: 500px;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.recommendation-link__img:hover {
+  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.28);
+}
+/* recommendation section end */
+/* section end */
